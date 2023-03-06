@@ -10,7 +10,46 @@
   <title>Player</title>
 </head>
 <body>
-  
+  <div class="player">
+    <div class="wrapper">
+      <div class="details">
+        <div class="now-playing"> PLAYING x OF y</div>
+        <div class="track-art"></div>
+        <div class="track-name">Track Name</div>
+        <div class="track-artist">Track Artist</div>
+      </div>
+
+      <div class="slider_container">
+        <div class="current-time">00:00</div>
+        <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+        <div class="total-duration">00:00</div>
+      </div>
+
+      <div class="slider-container">
+        <button class="icon volume-down"></button>
+        <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
+        <button class="icon volume-up"></button>
+      </div>
+
+      <div class="buttons">
+          <button class="icon random-track" title="random" onclick="randomTrack()"></button>
+          <button class="icon prev-track" onclick="prevTrack()"></button>
+          <button class="icon playpause-track" onclick="playPauseTrack()"></button>
+          <button class="icon next-track" onclick="nextTrack()"></button>
+          <button class="icon repeat-track" onclick="repeatTrack()"></button>
+      </div>
+
+      <div class="wave">
+        <span class="stroke"></span>
+        <span class="stroke"></span>
+        <span class="stroke"></span>
+        <span class="stroke"></span>
+        <span class="stroke"></span>
+        <span class="stroke"></span>
+        <span class="stroke"></span>
+      </div>
+    </div>
+  </div>
   <script type="module" src="js/index.js"></script>
 </body>
 </html>
