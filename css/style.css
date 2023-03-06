@@ -3,3 +3,57 @@
 *::before {
   box-sizing: border-box;
 }
+
+body {
+  background-color: rgba(0,0,0,0.5);
+}
+.player-icon {
+  width: 40px;
+  height: 40px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.player-icon:hover {
+  opacity: 1;
+}
+
+.player-icon:active {
+  border: 0;
+  outline: 0;
+  transform: scale(1.1);
+}
+
+.volume-down {
+  background-image: url(../assets/svg/volume-down1.svg);
+}
+
+.volume-up {
+  background-image: url(../assets/svg/volume-up1.svg);
+}
+
+.random-track {
+  background-image: url(../assets/svg/random.svg);
+}
+
+.prev-track {
+  background-image: url(../assets/svg/play-prev.svg);
+}
+
+.next-track {
+  background-image: url(../assets/svg/play-next.svg);
+}
+
+.playpause-track {
+  background-image: url(../assets/svg/play.svg);
+}
+
+.repeat-track {
+  background-image: url(../assets/svg/repeat.svg);
+}
